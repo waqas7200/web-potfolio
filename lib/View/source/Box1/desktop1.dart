@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:web_potfolio/View/utils/constants/colorconstants.dart';
 import '../../component/custom_text.dart';
 import '../../utils/constants/responsive.dart';
-class Box1Desktop extends StatelessWidget {
+class Box1Desktop extends StatefulWidget {
   const Box1Desktop({super.key});
 
   @override
+  State<Box1Desktop> createState() => _Box1DesktopState();
+}
+
+class _Box1DesktopState extends State<Box1Desktop> {
+  bool selected=false;
+  @override
   Widget build(BuildContext context) {
     return Container(
-      height:  Responsive.ContainerHeight(context),
+      height:  ResponsiveContainer.ContainerHeight(context,1.05),
       width: Responsive.ContainerWidth(context),
       decoration: BoxDecoration(
         color: Colors.white38,
@@ -148,7 +155,11 @@ class Box1Desktop extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 25,left: 30),
                   child:ElevatedButton(style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black
-                  ),onPressed: (){},
+                  ),onPressed: (){
+                    setState(() {
+                      selected=!selected;
+                    });
+                  },
                     child: CustomText(weight: FontWeight.w600,
                         size: Responsivetext.medium(context, 0.013),
                     color: Colors.white, text: "Let's Talks"),
@@ -168,7 +179,27 @@ class Box1Desktop extends StatelessWidget {
 
               ],
             ),
+          if(selected)
+            Padding(
+              padding: const EdgeInsets.only(top: 10,left: 50),
+              child: Row(children: [
+               CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                 child: CustomText(weight: FontWeight.bold, size: 10,
+                     color:Appcolors.white, text: 'Watsapp'),
+               ),
+                SizedBox(width: 20,),
+                CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                  child: CustomText(weight: FontWeight.bold, size: 10,
+                      color:Appcolors.white, text: 'Linkdin'),
+                ),
+                SizedBox(width: 20,),
+                CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                  child: CustomText(weight: FontWeight.bold, size: 10,
+                      color:Appcolors.white, text: 'Github'),
+                ),
 
+              ],),
+            )
 
           ],
         )),

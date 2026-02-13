@@ -38,4 +38,20 @@ class Responsive {
     static double large(BuildContext context,factor){
         return MediaQuery.of(context).size.width*factor;
     }
+
+  static EdgeInsets paddingOnly(
+      BuildContext context, {
+        double left = 0,
+        double right = 0,
+        double top = 0,
+        double bottom = 0,
+      }) {
+    return EdgeInsets.only(
+      left: MediaQuery.of(context).size.width * left,
+      right: MediaQuery.of(context).size.width * right,
+      top: MediaQuery.of(context).size.height * top,
+      bottom: MediaQuery.of(context).size.height * bottom,
+    );
   }
+  }
+

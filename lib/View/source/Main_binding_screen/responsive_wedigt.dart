@@ -4,7 +4,7 @@ class ResponsiveWedigtWeb extends StatelessWidget {
   final Widget desktop;
   final Widget tablet;
   final Widget mobile;
-  const ResponsiveWedigtWeb({super.key,
+  ResponsiveWedigtWeb({super.key,
   required this.desktop,
     required this.tablet,
     required this.mobile

@@ -6,22 +6,22 @@ import '../../component/customButton.dart';
 import '../../component/customTextform.dart';
 import '../../component/custom_text.dart';
 
-class Box3desktop extends StatelessWidget {
-   Box3desktop({super.key});
+class Box3tablet extends StatelessWidget {
+  Box3tablet({super.key});
 
   @override
   TextEditingController namecontroller=TextEditingController();
   TextEditingController emailcontroller=TextEditingController();
   Widget build(BuildContext context) {
     return Container(
-    height:ResponsiveContainer.ContainerHeight(context, 6),
-    width:ResponsiveContainer.ContainerWidth(context, 1),
-  decoration: BoxDecoration(
-    color: Appcolors.contbackg
-    // image: DecorationImage(image: AssetImage('assets/2ndcontainer.jpeg'),
-    //     fit: BoxFit.cover
-    // )
-  ),
+      height:ResponsiveContainer.ContainerHeight(context, 6),
+      width:ResponsiveContainer.ContainerWidth(context, 1),
+      decoration: BoxDecoration(
+          color: Appcolors.contbackg
+        // image: DecorationImage(image: AssetImage('assets/2ndcontainer.jpeg'),
+        //     fit: BoxFit.cover
+        // )
+      ),
 
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,9 +35,9 @@ class Box3desktop extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 10,left: 10),
                   child:   Container(
-                    width: 80, // line ki length
-                    height: 2,  // line ki thickness
-                    color:Appcolors.maincolor
+                      width: 80, // line ki length
+                      height: 2,  // line ki thickness
+                      color:Appcolors.maincolor
                   ),
                 ),
                 Padding(
@@ -76,11 +76,11 @@ class Box3desktop extends StatelessWidget {
                         color: Colors.black, text: 'Twitter')
                 ),
 
-              //my gmail==============================================
+                //my gmail==============================================
                 Padding(
                   padding: const EdgeInsets.only(top: 10,left: 10),
                   child:   Container(
-                    width: ResponsiveContainer.ContainerWidth(context, 0.4), // line ki length
+                    width: ResponsiveContainer.ContainerWidth(context, 0.23), // line ki length
                     height: 2,  // line ki thickness
                     color: Appcolors.maincolor,
                   ),
@@ -114,38 +114,38 @@ class Box3desktop extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                    Row(
-                      children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10,left: 10),
-                        child:   Container(
-                            width: 80, // line ki length
-                            height: 2,  // line ki thickness
-                            color:Appcolors.maincolor
-                        ),
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.only(top: 5,left: 10),
-                          child:   CustomText(weight: FontWeight.bold,
-                              size:  Responsivetext.medium(context, 0.01),
-                              color: Colors.black, text: 'My Services')
-                      ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10,left: 10),
+                            child:   Container(
+                                width: 80, // line ki length
+                                height: 2,  // line ki thickness
+                                color:Appcolors.maincolor
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.only(top: 5,left: 10),
+                              child:   CustomText(weight: FontWeight.bold,
+                                  size:  Responsivetext.medium(context, 0.01),
+                                  color: Colors.black, text: 'My Services')
+                          ),
 
-                    ],),
+                        ],),
                       Padding(
                           padding: const EdgeInsets.only(top: 5,left: 10),
                           child:   CustomText(weight: FontWeight.bold,
                               size:  Responsivetext.medium(context, 0.03),
                               color: Colors.black, text: "WHAT I'M \nOFFERING")
                       ),
-                  ],),
+                    ],),
                 ),
 
 
                 //===========================================
 
                 Padding(
-                    padding: const EdgeInsets.only(top: 5,left: 150),
+                    padding: const EdgeInsets.only(top: 5,left: 100),
                     child:   CustomText(weight: FontWeight.bold,
                         size:  Responsivetext.medium(context, 0.012),
                         color: Colors.black, text: 'There are many variations of passage of lorem lpsum available, but '
@@ -153,22 +153,22 @@ class Box3desktop extends StatelessWidget {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 100),
+                  padding: const EdgeInsets.only(left:20 ),
                   child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                     color: Appcolors.black,
                     textcolor: Appcolors.white, text: 'All Services',
-                      height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    height: ResponsiveContainer.ContainerWidth(context,0.04),),
                 )
               ],
             ),
           ),
-   //3rd row===========================================
+          //3rd row===========================================
           Row(children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 10,left:80),
+                  padding: const EdgeInsets.only(top: 10,left:50),
                   child:   Container(
                       width: 5, // line ki length
                       height: 80,  // line ki thickness
@@ -176,21 +176,21 @@ class Box3desktop extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 10,left:64),
-                  child:   CircleAvatar(
-                    radius: 20,
-                    backgroundColor:Appcolors.black,
-                    child: Icon(Icons.arrow_downward,size: 20,
+                    padding: const EdgeInsets.only(top: 10,left:35),
+                    child:   CircleAvatar(
+                      radius: 20,
+                      backgroundColor:Appcolors.black,
+                      child: Icon(Icons.arrow_downward,size: 20,
                         color: Appcolors.white,),
-                  )
+                    )
                 ),
               ],
             ),
             //Containers===============================
             Padding(
-                padding: const EdgeInsets.only(top: 10,left:184),
+                padding: const EdgeInsets.only(top: 10,left:100),
                 child:  Container(
-                  height: ResponsiveContainer.ContainerHeight(context, 0.5),
+                  height: ResponsiveContainer.ContainerHeight(context, 0.4),
                   width: ResponsiveContainer.ContainerWidth(context, 0.22),
                   color: Appcolors.black,
                   child: Padding(
@@ -200,20 +200,21 @@ class Box3desktop extends StatelessWidget {
                       children: [
                         Icon(Icons.waves_rounded,size: 30,color:  Appcolors.white,),
                         Padding(
-                          padding: const EdgeInsets.all(38.0),
-                          child: CustomText(weight: FontWeight.bold, size: 15,
+                          padding: const EdgeInsets.only(top: 25,left: 20),
+                          child: CustomText(weight: FontWeight.bold, size: 10,
                               color: Appcolors.white, text: 'Flutter \nCreative \nDesigns'),
                         ),
                         Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 10),
-                              child: CustomText(weight: FontWeight.normal, size: 12,
+                              padding: const EdgeInsets.only(top: 20,left: 0),
+                              child: CustomText(weight: FontWeight.normal, size: 7,
                                   color: Appcolors.white, text: 'READ MORE'),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 20),
-                              child: Icon(Icons.arrow_forward,color: Appcolors.white,),
+                              padding: const EdgeInsets.only(top: 20,left: 4),
+                              child: Icon(Icons.arrow_forward,
+                                color: Appcolors.white,size: 15,),
                             ),
                           ],
                         )
@@ -225,30 +226,30 @@ class Box3desktop extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.only(top: 10,left:12),
                 child:  Container(
-                  height: ResponsiveContainer.ContainerHeight(context, 0.5),
+                  height: ResponsiveContainer.ContainerHeight(context, 0.4),
                   width: ResponsiveContainer.ContainerWidth(context, 0.22),
                   color: Appcolors.white,
                   child: Padding(
-                    padding: const EdgeInsets.all(28.0),
+                    padding: const EdgeInsets.only(top: 25,left: 20),
                     child: Column(
                       crossAxisAlignment:CrossAxisAlignment.start,
                       children: [
                         Icon(Icons.screen_share_sharp,size: 30,color:  Appcolors.black,),
                         Padding(
                           padding: const EdgeInsets.all(38.0),
-                          child: CustomText(weight: FontWeight.bold, size: 15,
+                          child: CustomText(weight: FontWeight.bold, size: 10,
                               color: Appcolors.black, text: 'Firebase\nbackend'),
                         ),
                         Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 10),
-                              child: CustomText(weight: FontWeight.normal, size: 12,
+                              padding: const EdgeInsets.only(top: 10,left: 7),
+                              child: CustomText(weight: FontWeight.normal, size: 10,
                                   color: Appcolors.black, text: 'READ MORE'),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 20),
-                              child: Icon(Icons.arrow_forward),
+                              padding: const EdgeInsets.only(top: 10,left: 10),
+                              child: Icon(Icons.arrow_forward,size: 15,),
                             ),
                           ],
                         )
@@ -260,30 +261,30 @@ class Box3desktop extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.only(top: 10,left:12),
                 child:  Container(
-                  height: ResponsiveContainer.ContainerHeight(context, 0.5),
+                  height: ResponsiveContainer.ContainerHeight(context, 0.4),
                   width: ResponsiveContainer.ContainerWidth(context, 0.22),
                   color: Appcolors.white,
                   child: Padding(
-                    padding: const EdgeInsets.all(28.0),
+                    padding: const EdgeInsets.only(top: 25,left: 20),
                     child: Column(
                       crossAxisAlignment:CrossAxisAlignment.start,
                       children: [
                         Icon(Icons.coronavirus,size: 30,color:  Appcolors.black,),
                         Padding(
                           padding: const EdgeInsets.all(38.0),
-                          child: CustomText(weight: FontWeight.bold, size: 15,
+                          child: CustomText(weight: FontWeight.bold, size: 10,
                               color: Appcolors.black, text: 'State\nMAnagments'),
                         ),
                         Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 10),
+                              padding: const EdgeInsets.only(top: 10,left: 7),
                               child: CustomText(weight: FontWeight.normal, size: 12,
                                   color: Appcolors.black, text: 'READ MORE'),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 20,left: 20),
-                              child: Icon(Icons.arrow_forward),
+                              padding: const EdgeInsets.only(top: 10,left: 10),
+                              child: Icon(Icons.arrow_forward,size: 15,),
                             ),
                           ],
                         )
@@ -296,18 +297,18 @@ class Box3desktop extends StatelessWidget {
           ],),
           //icon
           Padding(
-              padding: const EdgeInsets.only(top: 43,left:500),
+              padding: const EdgeInsets.only(top: 43,left:300),
               child: Icon(Icons.blur_circular_rounded)
           ),
           //Exsperince Text =================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:410),
+              padding: const EdgeInsets.only(top: 10,left:200),
               child: CustomText(weight: FontWeight.bold, size: 40,
                   color: Appcolors.black, text: 'EXPERIENCE')
           ),
           //some line of text under experence===================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:340),
+              padding: const EdgeInsets.only(top: 10,left:200),
               child:  CustomText(weight: FontWeight.bold,
                   size:  Responsivetext.medium(context, 0.012),
                   color: Colors.black, text: 'There are many variations of passage of lorem lpsum available, but '
@@ -321,46 +322,46 @@ class Box3desktop extends StatelessWidget {
               padding: const EdgeInsets.only(top: 30,left:150),
               child:Container(
                 width: ResponsiveContainer.ContainerWidth(context, 0.7),
-                height: ResponsiveContainer.ContainerHeight(context, 0.13),
+                height: ResponsiveContainer.ContainerHeight(context, 0.12),
                 color: Colors.black,
                 child: Row(children: [
 
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Container(
-                  width: ResponsiveContainer.ContainerWidth(context, 0.033),
-                  height: ResponsiveContainer.ContainerHeight(context, 0.062),
-                  color: Appcolors.maincolor,
-                  child: Center(child: CustomText(weight: FontWeight.bold,
-                      size: 15,
-                      color: Appcolors.black, text: '1')),
-                                ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 5,left: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top:10,left: 5),
-                        child: CustomText(weight: FontWeight.bold,
-                            size: 15,
-                            color: Appcolors.white, text: 'Developer Hub Corpuration'),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top:0,left: 5),
-                        child: CustomText(weight: FontWeight.normal,
-                            size: 15,
-                            color: Appcolors.white, text: 'Located in Islamabad'),
-                      ),
-
-                    ],
-                  ),
-                ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 350),
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Container(
+                      width: ResponsiveContainer.ContainerWidth(context, 0.033),
+                      height: ResponsiveContainer.ContainerHeight(context, 0.043),
+                      color: Appcolors.maincolor,
+                      child: Center(child: CustomText(weight: FontWeight.bold,
+                          size: 15,
+                          color: Appcolors.black, text: '1')),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 5,left: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top:15,left: 5),
+                          child: CustomText(weight: FontWeight.bold,
+                              size: Responsivetext.medium(context, 0.015),
+                              color: Appcolors.white, text: 'Developer Hub Corpuration'),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top:0,left: 5),
+                          child: CustomText(weight: FontWeight.normal,
+                              size: Responsivetext.medium(context, 0.0118),
+                              color: Appcolors.white, text: 'Located in Islamabad'),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 140),
                     child: Center(child: CustomText(weight: FontWeight.bold,
-                        size: 15,
+                        size: Responsivetext.medium(context, 0.0118),
                         color: Appcolors.white, text: 'InternShip Duration - 6 month')),
                   ),
 
@@ -381,7 +382,7 @@ class Box3desktop extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 10),
                     child: Container(
                       width: ResponsiveContainer.ContainerWidth(context, 0.033),
-                      height: ResponsiveContainer.ContainerHeight(context, 0.062),
+                      height: ResponsiveContainer.ContainerHeight(context, 0.04),
                       color: Appcolors.maincolor,
                       child: Center(child: CustomText(weight: FontWeight.bold,
                           size: 15,
@@ -394,15 +395,15 @@ class Box3desktop extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top:10,left: 5),
+                          padding: const EdgeInsets.only(top:15,left: 5),
                           child: CustomText(weight: FontWeight.bold,
-                              size: 15,
+                              size: Responsivetext.medium(context, 0.014),
                               color: Appcolors.black, text: 'SYNTEXHUB '),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top:0,left: 5),
                           child: CustomText(weight: FontWeight.normal,
-                              size: 15,
+                              size: Responsivetext.medium(context, 0.014),
                               color: Appcolors.black, text: 'Located in India'),
                         ),
 
@@ -410,9 +411,9 @@ class Box3desktop extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 425),
+                    padding: const EdgeInsets.only(left: 198),
                     child: Center(child: CustomText(weight: FontWeight.bold,
-                        size: 15,
+                        size: Responsivetext.medium(context, 0.014),
                         color: Appcolors.black, text: 'InternShip Duration - 1 month')),
                   ),
 
@@ -433,7 +434,7 @@ class Box3desktop extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 10),
                     child: Container(
                       width: ResponsiveContainer.ContainerWidth(context, 0.033),
-                      height: ResponsiveContainer.ContainerHeight(context, 0.062),
+                      height: ResponsiveContainer.ContainerHeight(context, 0.04),
                       color: Appcolors.maincolor,
                       child: Center(child: CustomText(weight: FontWeight.bold,
                           size: 15,
@@ -448,13 +449,13 @@ class Box3desktop extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(top:10,left: 5),
                           child: CustomText(weight: FontWeight.bold,
-                              size: 15,
+                              size: Responsivetext.medium(context, 0.014),
                               color: Appcolors.black, text: 'APP ID CORE '),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top:0,left: 5),
                           child: CustomText(weight: FontWeight.normal,
-                              size: 15,
+                              size: Responsivetext.medium(context, 0.014),
                               color: Appcolors.black, text: 'Located in Germany'),
                         ),
 
@@ -462,9 +463,9 @@ class Box3desktop extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 400),
+                    padding: const EdgeInsets.only(left: 180),
                     child: Center(child: CustomText(weight: FontWeight.bold,
-                        size: 15,
+                        size: Responsivetext.medium(context, 0.014),
                         color: Appcolors.black, text: 'InternShip Duration - 4 month')),
                   ),
 
@@ -644,7 +645,7 @@ class Box3desktop extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 50),
-                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.19),
                         color: Appcolors.black,
                         textcolor: Appcolors.white, text: 'Easypasa and myUfone UI',
                         height: ResponsiveContainer.ContainerWidth(context,0.04),),
@@ -741,7 +742,7 @@ class Box3desktop extends StatelessWidget {
 
             ],
           ),
-          
+
           SizedBox(height: 20,),
           Divider(color: Appcolors.maincolor,),
           //next screen=====================================================
@@ -751,45 +752,45 @@ class Box3desktop extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-              //1st coloum
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                //1st coloum
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                Icon(Icons.app_blocking_rounded),
-                //==========
-                CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
-                    color: Appcolors.black, text: '2450'),
-                //==============
-                CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
-                    color: Appcolors.black, text: "project comleted\nand done"),
+                    Icon(Icons.app_blocking_rounded),
+                    //==========
+                    CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
+                        color: Appcolors.black, text: '2450'),
+                    //==============
+                    CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
+                        color: Appcolors.black, text: "project comleted\nand done"),
+                  ],),
+
+                //2nd coloumn
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.groups),
+                    //==========
+                    CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
+                        color: Appcolors.black, text: '1076'),
+                    //==============
+                    CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
+                        color: Appcolors.black, text: "saticifed clients"),
+                  ],),
+
+                //3rd coloumn
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.group),
+                    //==========
+                    CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
+                        color: Appcolors.black, text: '11'),
+                    //==============
+                    CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
+                        color: Appcolors.black, text: "world wide customer"),
+                  ],),
               ],),
-
-              //2nd coloumn
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Icon(Icons.groups),
-                  //==========
-                  CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
-                      color: Appcolors.black, text: '1076'),
-                  //==============
-                  CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
-                      color: Appcolors.black, text: "saticifed clients"),
-                ],),
-
-              //3rd coloumn
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Icon(Icons.group),
-                  //==========
-                  CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
-                      color: Appcolors.black, text: '11'),
-                  //==============
-                  CustomText(weight: FontWeight.normal, size: Responsivetext.medium(context, 0.01),
-                      color: Appcolors.black, text: "world wide customer"),
-                ],),
-            ],),
           ),
 
 
@@ -816,99 +817,99 @@ class Box3desktop extends StatelessWidget {
                     "and lets chat."),
           ),
 
-         //2 textformfield====================================
-              Padding(
-                padding: const EdgeInsets.only(top: 50,left: 100),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //2 textformfield====================================
+          Padding(
+            padding: const EdgeInsets.only(top: 50,left: 100),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(weight: FontWeight.bold,
-                            size: Responsivetext.medium(context, 0.012),
-                            color: Appcolors.black, text: "Name :"),
-                        Container(
-                           width: ResponsiveContainer.ContainerWidth(context, 0.3),
-                            height: ResponsiveContainer.ContainerHeight(context,0.07),
-                            child: Customtextform(controller: emailcontroller, hint: 'name...',)),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(weight: FontWeight.bold,
-                            size: Responsivetext.medium(context, 0.012),
-                            color: Appcolors.black, text: "Email :"),
-                        Container(
-                            width: ResponsiveContainer.ContainerWidth(context, 0.3),
-                            height: ResponsiveContainer.ContainerHeight(context,0.07),
-                            child: Customtextform(controller: namecontroller, hint: 'where can I reply?',)),
-                      ],
-                    ),
-
+                    CustomText(weight: FontWeight.bold,
+                        size: Responsivetext.medium(context, 0.012),
+                        color: Appcolors.black, text: "Name :"),
+                    Container(
+                        width: ResponsiveContainer.ContainerWidth(context, 0.3),
+                        height: ResponsiveContainer.ContainerHeight(context,0.07),
+                        child: Customtextform(controller: emailcontroller, hint: 'name...',)),
                   ],
                 ),
-              ),
-              //what is in your mind===========================
-              Padding(
-                padding: const EdgeInsets.only(left: 200,top: 60),
-                child:  CustomText(weight: FontWeight.bold,
-                    size: Responsivetext.medium(context, 0.012),
-                    color: Appcolors.black, text: "what is in your mind?*"),
-              ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CustomText(weight: FontWeight.bold,
+                        size: Responsivetext.medium(context, 0.012),
+                        color: Appcolors.black, text: "Email :"),
+                    Container(
+                        width: ResponsiveContainer.ContainerWidth(context, 0.3),
+                        height: ResponsiveContainer.ContainerHeight(context,0.07),
+                        child: Customtextform(controller: namecontroller, hint: 'where can I reply?',)),
+                  ],
+                ),
 
-              //button row==============================
+              ],
+            ),
+          ),
+          //what is in your mind===========================
+          Padding(
+            padding: const EdgeInsets.only(left: 200,top: 60),
+            child:  CustomText(weight: FontWeight.bold,
+                size: Responsivetext.medium(context, 0.012),
+                color: Appcolors.black, text: "what is in your mind?*"),
+          ),
+
+          //button row==============================
+          Padding(
+            padding: const EdgeInsets.only(left: 100,top: 30),
+            child: Row(children: [
               Padding(
-                padding: const EdgeInsets.only(left: 100,top: 30),
-                child: Row(children: [
-                  Padding(
-                      padding: const EdgeInsets.only(left: 20,top: 20),
-                      child: Custombutton(width:ResponsiveContainer.
-                      ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Mobile App',
-                          height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
-                  ),
-                  Padding(
-                      padding: const EdgeInsets.only(left: 20,top: 20),
-                      child: Custombutton(width:ResponsiveContainer.
-                      ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Web Designs',
-                          height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
-                  ),
-                  Padding(
-                      padding: const EdgeInsets.only(left: 20,top: 20),
-                      child: Custombutton(width:ResponsiveContainer.
-                      ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Cross Applications'
-                              '',
-                          height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
-                  ),
-                  Padding(
-                      padding: const EdgeInsets.only(left: 20,top: 20),
-                      child: Custombutton(width:ResponsiveContainer.
-                      ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Ios Apps',
-                          height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
-                  ),
-                  Padding(
-                      padding: const EdgeInsets.only(left: 20,top: 20),
-                      child: Custombutton(width:ResponsiveContainer.
-                      ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Android Apps',
-                          height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
-                  ),
-                ],),
+                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  child: Custombutton(width:ResponsiveContainer.
+                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                      textcolor: Appcolors.black, text: 'Mobile App',
+                      height: ResponsiveContainer.
+                      ContainerHeight(context, 0.07))
               ),
+              Padding(
+                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  child: Custombutton(width:ResponsiveContainer.
+                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                      textcolor: Appcolors.black, text: 'Web Designs',
+                      height: ResponsiveContainer.
+                      ContainerHeight(context, 0.07))
+              ),
+              Padding(
+                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  child: Custombutton(width:ResponsiveContainer.
+                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                      textcolor: Appcolors.black, text: 'Cross Applications'
+                          '',
+                      height: ResponsiveContainer.
+                      ContainerHeight(context, 0.07))
+              ),
+              Padding(
+                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  child: Custombutton(width:ResponsiveContainer.
+                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                      textcolor: Appcolors.black, text: 'Ios Apps',
+                      height: ResponsiveContainer.
+                      ContainerHeight(context, 0.07))
+              ),
+              Padding(
+                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  child: Custombutton(width:ResponsiveContainer.
+                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                      textcolor: Appcolors.black, text: 'Android Apps',
+                      height: ResponsiveContainer.
+                      ContainerHeight(context, 0.07))
+              ),
+            ],),
+          ),
 
           //=send button=======================
           Padding(
-              padding: const EdgeInsets.only(left: 700,top: 50),
+              padding: const EdgeInsets.only(left: 600,top: 50),
               child: Custombutton(width:ResponsiveContainer.
               ContainerWidth(context, 0.12) , color: Appcolors.black,
                   textcolor: Appcolors.white, text: 'Send me',
@@ -916,7 +917,7 @@ class Box3desktop extends StatelessWidget {
                   ContainerHeight(context, 0.07))
           ),
           Padding(
-              padding: const EdgeInsets.only(left: 700,top: 20),
+              padding: const EdgeInsets.only(left: 550,top: 20),
               child:CustomText(weight:FontWeight.normal,
                   size:  Responsivetext.medium(context, 0.012),
                   color: Appcolors.black, text: "I'll must get back "
