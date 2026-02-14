@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_potfolio/View/utils/constants/colorconstants.dart';
 import '../../component/custom_text.dart';
 import '../../utils/constants/responsive.dart';
@@ -165,17 +166,25 @@ class _Box1DesktopState extends State<Box1Desktop> {
                     color: Colors.white, text: "Let's Talks"),
                     )
                     ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 25,left: 30),
-                  child:  CustomText(weight: FontWeight.w800,
-                    size:  Responsivetext.medium(context, 0.013), color: Colors.black,
-                    text: "Downlod CV",),
-                ),
-               IconButton(onPressed: (){},
-                   icon:  Padding(
-                       padding: const EdgeInsets.only(top: 25,left: 3),
-                       child: Icon(Icons.arrow_downward_outlined,size: 19,)
-                   ),)
+               InkWell(
+                    onTap: ()async{
+                      if(!await launchUrl(Uri.parse('https://drive.google.com/file/d/1luP353fKR9n'
+                          '-B1wAZ06E1u7PrnITeBF_/view?usp=sharing'))){}
+                    },
+                    child: Padding(
+                        padding: const EdgeInsets.only(top: 25,left: 30),
+                        child:  CustomText(weight: FontWeight.w800,
+                          size:  Responsivetext.medium(context, 0.013), color: Colors.black,
+                          text: "MY CV",),
+                      ),
+                  ),
+
+
+               // IconButton(onPressed: (){},
+               //     icon:  Padding(
+               //         padding: const EdgeInsets.only(top: 25,left: 3),
+               //         child: Icon(Icons.arrow_downward_outlined,size: 19,)
+               //     ),)
 
               ],
             ),
@@ -183,20 +192,37 @@ class _Box1DesktopState extends State<Box1Desktop> {
             Padding(
               padding: const EdgeInsets.only(top: 10,left: 50),
               child: Row(children: [
-               CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
-                 child: CustomText(weight: FontWeight.bold, size: 10,
-                     color:Appcolors.white, text: 'Watsapp'),
+               InkWell(
+                 onTap: ()async{
+                   if(!await launchUrl(Uri.parse('http://wa.me/+923301547071'))){}
+                 },
+                 child: CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                   child: CustomText(weight: FontWeight.bold, size: 10,
+                       color:Appcolors.white, text: 'Watsapp'),
+                 ),
                ),
                 SizedBox(width: 20,),
-                CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
-                  child: CustomText(weight: FontWeight.bold, size: 10,
-                      color:Appcolors.white, text: 'Linkdin'),
+                InkWell(
+                  onTap: ()async{
+                    if(!await launchUrl(Uri.parse('https://www.linkedin.com/public-profile/settings/'))){}
+                  },
+                  child: CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                    child: CustomText(weight: FontWeight.bold, size: 10,
+                        color:Appcolors.white, text: 'Linkdin'),
+                  ),
                 ),
                 SizedBox(width: 20,),
-                CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
-                  child: CustomText(weight: FontWeight.bold, size: 10,
-                      color:Appcolors.white, text: 'Github'),
+                InkWell(
+                  onTap: ()async{
+                    if(!await launchUrl(Uri.parse('https://github.com/waqas7200'))){}
+                  },
+                  child: CircleAvatar(backgroundColor: Appcolors.black,radius: 30,
+                    child: CustomText(weight: FontWeight.bold, size: 10,
+                        color:Appcolors.white, text: 'Github'),
+                  ),
                 ),
+
+
 
               ],),
             )

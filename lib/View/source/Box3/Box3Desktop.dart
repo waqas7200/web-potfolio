@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_potfolio/View/utils/constants/colorconstants.dart';
 import 'package:web_potfolio/View/utils/constants/responsive.dart' hide Padding;
 
@@ -518,12 +519,17 @@ class Box3desktop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50),
-                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
-                        color: Appcolors.black,
-                        textcolor: Appcolors.white, text: 'Note App',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    InkWell(
+                      onTap: ()async{
+                        if(!await launchUrl(Uri.parse('https://github.com/waqas7200/practice_app')));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 50),
+                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                          color: Appcolors.black,
+                          textcolor: Appcolors.white, text: 'Note App',
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                      ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -565,12 +571,17 @@ class Box3desktop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50),
-                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
-                        color: Appcolors.black,
-                        textcolor: Appcolors.white, text: 'TO Do APP',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    InkWell(
+                      onTap: ()async{
+                        if(!await launchUrl(Uri.parse('https://github.com/waqas7200/ToDo-App')));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 50),
+                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                          color: Appcolors.black,
+                          textcolor: Appcolors.white, text: 'TO Do APP',
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                      ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -642,12 +653,17 @@ class Box3desktop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50),
-                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
-                        color: Appcolors.black,
-                        textcolor: Appcolors.white, text: 'Easypasa and myUfone UI',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    InkWell(
+                      onTap: ()async{
+                        if(!await launchUrl(Uri.parse('https://github.com/waqas7200')));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 50),
+                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                          color: Appcolors.black,
+                          textcolor: Appcolors.white, text: 'Easypasa and myUfone UI',
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                      ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -689,12 +705,17 @@ class Box3desktop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50),
-                      child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
-                        color: Appcolors.black,
-                        textcolor: Appcolors.white, text: 'Cart App UI',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    InkWell(
+                      onTap: ()async{
+                          if(!await launchUrl(Uri.parse('https://github.com/waqas7200')));
+                        },
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 50),
+                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                          color: Appcolors.black,
+                          textcolor: Appcolors.white, text: 'Cart App UI',
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                      ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
