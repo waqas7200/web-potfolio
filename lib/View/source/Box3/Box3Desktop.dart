@@ -701,7 +701,7 @@ class Box3desktop extends StatelessWidget {
             children: [
               //button and text with my project
               Padding(
-                padding: const EdgeInsets.only(left: 100,top: 20),
+                padding: const EdgeInsets.only(left: 10,top: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -710,21 +710,21 @@ class Box3desktop extends StatelessWidget {
                           if(!await launchUrl(Uri.parse('https://github.com/waqas7200')));
                         },
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 50),
-                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.25),
                           color: Appcolors.black,
                           textcolor: Appcolors.white, text: 'Cart App UI',
-                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                          height: ResponsiveContainer.ContainerHeight(context,0.04),),
                       ),
                     ),
                     Padding(
-                        padding: const EdgeInsets.only(top: 10,left:50),
-                        child: CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
+                        padding: const EdgeInsets.only(top: 10,left:10),
+                        child: CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.035),
                             color: Appcolors.black, text: 'I make UI of Cart App\nin which '
                                 'login,sign up,and forget password\nand OTP Screen')
                     ),
                     Padding(
-                        padding: const EdgeInsets.only(top: 30,left:50),
+                        padding: const EdgeInsets.only(top: 30,left:10),
                         child:Row(
                           children: [
                             Padding(
@@ -734,7 +734,7 @@ class Box3desktop extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 20,left: 20),
-                              child: Icon(Icons.arrow_forward,color: Appcolors.black,),
+                              child: Icon(Icons.arrow_forward,color: Appcolors.black,size: 15,),
                             ),
                           ],
                         )

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../Box1/box1tablet.dart';
-import '../../Box1/desktop1.dart';
-import '../../Box2/Box2desktop.dart';
-import '../../Box2/box2Tablet.dart';
-import '../../Box3/Box3tablet.dart';
+import '../../../Box1/box1tablet.dart';
+import '../../../Box1/desktop1.dart';
+import '../../../Box2/Box2desktop.dart';
+import '../../../Box2/box2Tablet.dart';
+import '../../../Box3/Box3tablet.dart';
 
 
 class Tablet extends StatelessWidget {
