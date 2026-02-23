@@ -14,7 +14,7 @@ class Box3tablet extends StatelessWidget {
   TextEditingController emailcontroller=TextEditingController();
   Widget build(BuildContext context) {
     return Container(
-      height:ResponsiveContainer.ContainerHeight(context, 6),
+     // height:ResponsiveContainer.ContainerHeight(context, 6),
       width:ResponsiveContainer.ContainerWidth(context, 1),
       decoration: BoxDecoration(
           color: Appcolors.contbackg
@@ -157,7 +157,8 @@ class Box3tablet extends StatelessWidget {
                   child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                     color: Appcolors.black,
                     textcolor: Appcolors.white, text: 'All Services',
-                    height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                    height: ResponsiveContainer.ContainerWidth(context,0.04),
+                    size: Responsivetext.medium(context, 0.012),),
                 )
               ],
             ),
@@ -297,18 +298,18 @@ class Box3tablet extends StatelessWidget {
           ],),
           //icon
           Padding(
-              padding: const EdgeInsets.only(top: 43,left:300),
+              padding: const EdgeInsets.only(top: 43,left:400),
               child: Icon(Icons.blur_circular_rounded)
           ),
           //Exsperince Text =================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:200),
+              padding: const EdgeInsets.only(top: 10,left:300),
               child: CustomText(weight: FontWeight.bold, size: 40,
                   color: Appcolors.black, text: 'EXPERIENCE')
           ),
           //some line of text under experence===================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:200),
+              padding: const EdgeInsets.only(top: 10,left:250),
               child:  CustomText(weight: FontWeight.bold,
                   size:  Responsivetext.medium(context, 0.012),
                   color: Colors.black, text: 'There are many variations of passage of lorem lpsum available, but '
@@ -476,18 +477,18 @@ class Box3tablet extends StatelessWidget {
 
           //icon
           Padding(
-              padding: const EdgeInsets.only(top: 43,left:500),
+              padding: const EdgeInsets.only(top: 43,left:400),
               child: Icon(Icons.blur_circular_rounded)
           ),
           //Case Duty Text =================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:410),
+              padding: const EdgeInsets.only(top: 10,left:320),
               child: CustomText(weight: FontWeight.bold, size: 40,
                   color: Appcolors.black, text: 'Case Duty')
           ),
           //some line of text under Case duty===================
           Padding(
-              padding: const EdgeInsets.only(top: 10,left:340),
+              padding: const EdgeInsets.only(top: 10,left:260),
               child:  CustomText(weight: FontWeight.bold,
                   size:  Responsivetext.medium(context, 0.012),
                   color: Colors.black, text: 'There are many variations of passage of lorem lpsum available, but '
@@ -524,7 +525,8 @@ class Box3tablet extends StatelessWidget {
                       child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                         color: Appcolors.black,
                         textcolor: Appcolors.white, text: 'Note App',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                        height: ResponsiveContainer.ContainerWidth(context,0.04),
+                        size: Responsivetext.medium(context, 0.013),),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -571,7 +573,8 @@ class Box3tablet extends StatelessWidget {
                       child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                         color: Appcolors.black,
                         textcolor: Appcolors.white, text: 'TO Do APP',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                        height: ResponsiveContainer.ContainerWidth(context,0.04),
+                        size: Responsivetext.medium(context, 0.012),),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -648,7 +651,8 @@ class Box3tablet extends StatelessWidget {
                       child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.19),
                         color: Appcolors.black,
                         textcolor: Appcolors.white, text: 'Easypasa and myUfone UI',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                        height: ResponsiveContainer.ContainerHeight(context,0.07),
+                        size: Responsivetext.medium(context, 0.012),),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -695,7 +699,7 @@ class Box3tablet extends StatelessWidget {
                       child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                         color: Appcolors.black,
                         textcolor: Appcolors.white, text: 'Cart App UI',
-                        height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                        height: ResponsiveContainer.ContainerWidth(context,0.04), size: Responsivetext.medium(context, 0.02),),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
@@ -869,7 +873,8 @@ class Box3tablet extends StatelessWidget {
                   ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                       textcolor: Appcolors.black, text: 'Mobile App',
                       height: ResponsiveContainer.
-                      ContainerHeight(context, 0.07))
+                      ContainerHeight(context, 0.07),
+                    size: Responsivetext.medium(context, 0.014),)
               ),
               Padding(
                   padding: const EdgeInsets.only(left: 20,top: 20),
@@ -877,16 +882,18 @@ class Box3tablet extends StatelessWidget {
                   ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                       textcolor: Appcolors.black, text: 'Web Designs',
                       height: ResponsiveContainer.
-                      ContainerHeight(context, 0.07))
+                      ContainerHeight(context, 0.07),
+                    size: Responsivetext.medium(context, 0.014),)
               ),
               Padding(
                   padding: const EdgeInsets.only(left: 20,top: 20),
                   child: Custombutton(width:ResponsiveContainer.
-                  ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
+                  ContainerWidth(context, 0.16) , color: Appcolors.maincolor,
                       textcolor: Appcolors.black, text: 'Cross Applications'
                           '',
                       height: ResponsiveContainer.
-                      ContainerHeight(context, 0.07))
+                      ContainerHeight(context, 0.07),
+                    size: Responsivetext.medium(context, 0.013),)
               ),
               Padding(
                   padding: const EdgeInsets.only(left: 20,top: 20),
@@ -894,7 +901,8 @@ class Box3tablet extends StatelessWidget {
                   ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                       textcolor: Appcolors.black, text: 'Ios Apps',
                       height: ResponsiveContainer.
-                      ContainerHeight(context, 0.07))
+                      ContainerHeight(context, 0.07),
+                    size: Responsivetext.medium(context, 0.014),)
               ),
               Padding(
                   padding: const EdgeInsets.only(left: 20,top: 20),
@@ -902,26 +910,32 @@ class Box3tablet extends StatelessWidget {
                   ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                       textcolor: Appcolors.black, text: 'Android Apps',
                       height: ResponsiveContainer.
-                      ContainerHeight(context, 0.07))
+                      ContainerHeight(context, 0.07),
+                    size: Responsivetext.medium(context, 0.014),)
               ),
             ],),
           ),
 
           //=send button=======================
           Padding(
-              padding: const EdgeInsets.only(left: 600,top: 50),
+              padding: const EdgeInsets.only(left: 350,top: 50),
               child: Custombutton(width:ResponsiveContainer.
               ContainerWidth(context, 0.12) , color: Appcolors.black,
                   textcolor: Appcolors.white, text: 'Send me',
                   height: ResponsiveContainer.
-                  ContainerHeight(context, 0.07))
+                  ContainerHeight(context, 0.07),
+                size: Responsivetext.medium(context, 0.014),)
           ),
           Padding(
-              padding: const EdgeInsets.only(left: 550,top: 20),
+              padding: const EdgeInsets.only(left: 300,top: 20),
               child:CustomText(weight:FontWeight.normal,
-                  size:  Responsivetext.medium(context, 0.012),
+                  size:  Responsivetext.medium(context, 0.016),
                   color: Appcolors.black, text: "I'll must get back "
                       "to you with in 24 hours")
+          ),
+          Padding(
+              padding: const EdgeInsets.only(left: 350,top: 20),
+              child:SizedBox(height: 20,)
           ),
 
 

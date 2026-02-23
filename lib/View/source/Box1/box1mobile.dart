@@ -18,7 +18,7 @@ class _Box1mobileState extends State<Box1mobile> {
 
   Widget build(BuildContext context) {
     return Container(
-      height: ResponsiveContainer.ContainerHeight(context, 1.013),
+      height: ResponsiveContainer.ContainerHeight(context, 1.8),
       width: ResponsiveContainer.ContainerWidth(context, 2),
       decoration: BoxDecoration(
         color: Appcolors.contbackg

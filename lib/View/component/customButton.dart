@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class Custombutton extends StatelessWidget {
   final double height;
   final double width;
+  final double size;
   final Color color;
   final Color textcolor;
   final String text;
   const Custombutton({super.key,
     required this.width,
+    required this.size,
     required this.color,
     required this.textcolor,
     required this.text,
@@ -23,7 +25,7 @@ class Custombutton extends StatelessWidget {
         borderRadius: BorderRadius.circular(30)
       ),
       child:Center(child: Text(text,style: TextStyle(color:textcolor,
-          fontWeight: FontWeight.bold
+          fontWeight: FontWeight.bold,fontSize: size
       ),),),
     );
   }

@@ -158,7 +158,8 @@ class Box3desktop extends StatelessWidget {
                   child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                     color: Appcolors.black,
                     textcolor: Appcolors.white, text: 'All Services',
-                      height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                      height: ResponsiveContainer.ContainerWidth(context,0.04),
+                    size: Responsivetext.medium(context, 0.015),),
                 )
               ],
             ),
@@ -528,12 +529,14 @@ class Box3desktop extends StatelessWidget {
                         child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                           color: Appcolors.black,
                           textcolor: Appcolors.white, text: 'Note App',
-                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),
+                          size: Responsivetext.medium(context, 0.015),),
                       ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
-                        child: CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.02),
+                        child: CustomText(weight: FontWeight.bold,
+                            size: Responsivetext.medium(context, 0.015),
                             color: Appcolors.black, text: 'App for todo'
                                 ' using CRUD\noperations'
                                 ' using provider\nstate management')
@@ -577,15 +580,18 @@ class Box3desktop extends StatelessWidget {
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(left: 50),
-                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
+                        child: Custombutton(
+                          width: ResponsiveContainer.ContainerWidth(context,0.15),
                           color: Appcolors.black,
                           textcolor: Appcolors.white, text: 'TO Do APP',
-                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),
+                          size: Responsivetext.medium(context, 0.015),),
                       ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:50),
-                        child: CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.015),
+                        child: CustomText(weight: FontWeight.bold,
+                            size: Responsivetext.medium(context, 0.015),
                             color: Appcolors.black, text: 'TO Do APP in which we add\n,delet ,update and log out\nfunction '
                                 'also with authentication,\nbackend with firebase')
                     ),
@@ -662,7 +668,8 @@ class Box3desktop extends StatelessWidget {
                         child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.15),
                           color: Appcolors.black,
                           textcolor: Appcolors.white, text: 'Easypasa and myUfone UI',
-                          height: ResponsiveContainer.ContainerWidth(context,0.04),),
+                          height: ResponsiveContainer.ContainerWidth(context,0.04),
+                          size: Responsivetext.medium(context, 0.01),),
                       ),
                     ),
                     Padding(
@@ -701,7 +708,7 @@ class Box3desktop extends StatelessWidget {
             children: [
               //button and text with my project
               Padding(
-                padding: const EdgeInsets.only(left: 10,top: 20),
+                padding: const EdgeInsets.only(left: 135,top: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -711,15 +718,18 @@ class Box3desktop extends StatelessWidget {
                         },
                       child: Padding(
                         padding: const EdgeInsets.only(left: 10),
-                        child: Custombutton(width: ResponsiveContainer.ContainerWidth(context,0.25),
+                        child: Custombutton(
+                          width: ResponsiveContainer.ContainerWidth(context,0.15),
                           color: Appcolors.black,
                           textcolor: Appcolors.white, text: 'Cart App UI',
-                          height: ResponsiveContainer.ContainerHeight(context,0.04),),
+                          height: ResponsiveContainer.ContainerHeight(context,0.07),
+                          size: Responsivetext.medium(context, 0.015),),
                       ),
                     ),
                     Padding(
                         padding: const EdgeInsets.only(top: 10,left:10),
-                        child: CustomText(weight: FontWeight.bold, size: Responsivetext.medium(context, 0.035),
+                        child: CustomText(weight: FontWeight.bold,
+                            size: Responsivetext.medium(context, 0.015),
                             color: Appcolors.black, text: 'I make UI of Cart App\nin which '
                                 'login,sign up,and forget password\nand OTP Screen')
                     ),
@@ -889,7 +899,8 @@ class Box3desktop extends StatelessWidget {
                       ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                           textcolor: Appcolors.black, text: 'Mobile App',
                           height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
+                          ContainerHeight(context, 0.07),
+                        size: Responsivetext.medium(context, 0.013),)
                   ),
                   Padding(
                       padding: const EdgeInsets.only(left: 20,top: 20),
@@ -897,16 +908,17 @@ class Box3desktop extends StatelessWidget {
                       ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                           textcolor: Appcolors.black, text: 'Web Designs',
                           height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
+                          ContainerHeight(context, 0.07),
+                        size: Responsivetext.medium(context, 0.013),)
                   ),
                   Padding(
                       padding: const EdgeInsets.only(left: 20,top: 20),
                       child: Custombutton(width:ResponsiveContainer.
                       ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
-                          textcolor: Appcolors.black, text: 'Cross Applications'
-                              '',
+                          textcolor: Appcolors.black, text: 'Cross Applications',
                           height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
+                          ContainerHeight(context, 0.07),
+                        size: Responsivetext.medium(context, 0.012),)
                   ),
                   Padding(
                       padding: const EdgeInsets.only(left: 20,top: 20),
@@ -914,7 +926,8 @@ class Box3desktop extends StatelessWidget {
                       ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                           textcolor: Appcolors.black, text: 'Ios Apps',
                           height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
+                          ContainerHeight(context, 0.07),
+                        size: Responsivetext.medium(context, 0.013),)
                   ),
                   Padding(
                       padding: const EdgeInsets.only(left: 20,top: 20),
@@ -922,22 +935,24 @@ class Box3desktop extends StatelessWidget {
                       ContainerWidth(context, 0.12) , color: Appcolors.maincolor,
                           textcolor: Appcolors.black, text: 'Android Apps',
                           height: ResponsiveContainer.
-                          ContainerHeight(context, 0.07))
+                          ContainerHeight(context, 0.07),
+                        size: Responsivetext.medium(context, 0.013),)
                   ),
                 ],),
               ),
 
           //=send button=======================
           Padding(
-              padding: const EdgeInsets.only(left: 700,top: 50),
+              padding: const EdgeInsets.only(left: 450,top: 50),
               child: Custombutton(width:ResponsiveContainer.
               ContainerWidth(context, 0.12) , color: Appcolors.black,
                   textcolor: Appcolors.white, text: 'Send me',
                   height: ResponsiveContainer.
-                  ContainerHeight(context, 0.07))
+                  ContainerHeight(context, 0.07),
+                size: Responsivetext.medium(context, 0.012),)
           ),
           Padding(
-              padding: const EdgeInsets.only(left: 700,top: 20),
+              padding: const EdgeInsets.only(left: 400,top: 20),
               child:CustomText(weight:FontWeight.normal,
                   size:  Responsivetext.medium(context, 0.012),
                   color: Appcolors.black, text: "I'll must get back "

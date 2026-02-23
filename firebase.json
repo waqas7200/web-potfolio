@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "waqas-developer",
+          "appId": "1:59409246132:android:ffdffb1a01ae146208f4e1",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "waqas-developer",
+          "configurations": {
+            "android": "1:59409246132:android:ffdffb1a01ae146208f4e1",
+            "ios": "1:59409246132:ios:a2f2b171ce1f4cb408f4e1",
+            "web": "1:59409246132:web:65aa62b00185a2dc08f4e1"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
